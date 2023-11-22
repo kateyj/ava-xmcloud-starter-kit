@@ -8,8 +8,9 @@ const SassAlias = require('sass-alias');
   return Object.assign({}, nextConfig, {
       sassOptions: {
         importer: new SassAlias({
-          '@sass': path.join(__dirname, '../../../assets', 'sass'),
-          '@fontawesome': path.join(__dirname, '../../../../node_modules', 'font-awesome'),
+          '@sass': path.join(__dirname, '../../assets', 'sass'),
+          '@fontawesome': path.join(__dirname, './node_modules', 'font-awesome'),
+
         }).getImporter(),
       },
     });
