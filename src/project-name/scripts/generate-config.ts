@@ -18,6 +18,10 @@ const defaultConfig: JssConfig = {
   defaultLanguage: process.env[`${constantCase('defaultLanguage')}`],
   graphQLEndpoint: process.env[`${constantCase('graphQLEndpoint')}`],
   layoutServiceConfigurationName: process.env[`${constantCase('layoutServiceConfigurationName')}`],
+  coveoAccessToken: process.env[`${constantCase('coveoAccessToken')}`],
+  coveoOrganizationId: process.env[`${constantCase('coveoOrganizationId')}`],
+  coveoPipeline: process.env[`${constantCase('coveoPipeline')}`],
+  coveoSearchHub: process.env[`${constantCase('coveoSearchHub')}`],
 };
 
 generateConfig(defaultConfig);

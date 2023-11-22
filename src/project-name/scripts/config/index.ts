@@ -12,6 +12,8 @@ export interface JssConfig extends Record<string, string | undefined> {
   defaultLanguage?: string;
   graphQLEndpoint?: string;
   layoutServiceConfigurationName?: string;
+  coveoAccessToken?: string;
+  coveoOrganizationId?: string;
 }
 
 export interface ConfigPlugin {
