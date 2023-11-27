@@ -10,13 +10,7 @@ $break-mobile-large: 992px;
     max-width: 960px;
     margin: 0 auto !important;
 }
-@mixin clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
+
 @mixin headings($from: 1, $to: 6) {
     @for $i from $from through $to {
         h#{$i} {
@@ -25,7 +19,6 @@ $break-mobile-large: 992px;
     }
 }
 @mixin font-size($sizeValue: 1.6) {
-    font-size: ($sizeValue * 10) + px;
     font-size: $sizeValue + rem;
 }
     @mixin proxima-font($weight:semibold) {
@@ -40,7 +33,7 @@ $break-mobile-large: 992px;
     font-family: "Open Sans", Helvetica, Verdana, Tahoma, sans-serif;
 }
 @mixin loading-gif() {
-    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSJibGFjayI+DQogIDxwYXRoICBvcGFjaXR5PSIuMjUiIGQ9Ik0xNiAwIEExNiAxNiAwIDAgMCAxNiAzMiBBMTYgMTYgMCAwIDAgMTYgMCBNMTYgNCBBMTIgMTIgMCAwIDEgMTYgMjggQTEyIDEyIDAgMCAxIDE2IDQiLz4NCiAgPHBhdGggZmlsbD0nIzFhODBiNicgZD0iTTE2IDAgQTE2IDE2IDAgMCAxIDMyIDE2IEwyOCAxNiBBMTIgMTIgMCAwIDAgMTYgNHoiPg0KICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDE2IDE2IiB0bz0iMzYwIDE2IDE2IiBkdXI9IjAuOHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPg0KICA8L3BhdGg+DQo8L3N2Zz4NCg==);
+    background-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSJibGFjayI+DQogIDxwYXRoICBvcGFjaXR5PSIuMjUiIGQ9Ik0xNiAwIEExNiAxNiAwIDAgMCAxNiAzMiBBMTYgMTYgMCAwIDAgMTYgMCBNMTYgNCBBMTIgMTIgMCAwIDEgMTYgMjggQTEyIDEyIDAgMCAxIDE2IDQiLz4NCiAgPHBhdGggZmlsbD0nIzFhODBiNicgZD0iTTE2IDAgQTE2IDE2IDAgMCAxIDMyIDE2IEwyOCAxNiBBMTIgMTIgMCAwIDAgMTYgNHoiPg0KICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDE2IDE2IiB0bz0iMzYwIDE2IDE2IiBkdXI9IjAuOHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPg0KICA8L3BhdGg+DQo8L3N2Zz4NCg==");
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -99,8 +92,6 @@ $break-mobile-large: 992px;
         $color-stops: $direction, $color-stops;
         $direction: 180deg;
     }
-    background: nth(nth($color-stops, 1), 1);
-    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
     background: linear-gradient($direction, $color-stops);
 }
 @mixin default-link-button {
@@ -114,6 +105,7 @@ $break-mobile-large: 992px;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+
   &:hover {
       color: $text-basic;
       background: $bg-light-gray;

@@ -5,17 +5,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .cover-background {
     >.component-content {
         @extend %cover-bg;
     }
 }
+
 .fix-background {
     >.component-content {
         @extend %cover-bg;
         @include fixed-bg(left top);
     }
 }
+
 .parallax-background {
     >.component-content {
         @extend %cover-bg;

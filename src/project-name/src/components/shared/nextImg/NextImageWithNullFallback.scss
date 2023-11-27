@@ -1,0 +1,102 @@
+@use '../../../sass/abstract/colors';
+@use '../../../sass/abstract/gradient';
+@use '../../../sass/abstract/border-radius';
+
+/*
+usage example:
+ <NextImageWithNullFallback
+    field={props.fields.Image}
+    params={{
+      styles: 'full-bleed-banner__image next-image--16-9',
+    }}
+  ></NextImageWithNullFallback>
+*/
+
+@mixin next-image-container {
+  overflow: hidden;
+  display: flex;
+}
+@mixin next-image {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+@mixin next-image-empty {
+  background-color: colors.$gray-20;
+}
+@mixin next-image-contain {
+  object-fit: contain;
+}
+@mixin next-image-container-21-9 {
+  aspect-ratio: 21/9;
+}
+@mixin next-image-container-16-9 {
+  aspect-ratio: 16/9;
+}
+@mixin next-image-container-1-2 {
+  aspect-ratio: 1/2;
+}
+@mixin next-image-container-3-1 {
+  aspect-ratio: 3/1;
+}
+@mixin next-image-container-2-1 {
+  aspect-ratio: 2/1;
+}
+@mixin next-image-container-square {
+  aspect-ratio: 1/1;
+}
+@mixin next-image-container-circle {
+  aspect-ratio: 1/1;
+  border-radius: border-radius.$border-radius-half;
+}
+
+.next-image {
+  @include next-image;
+
+  &--empty {
+    @include next-image-empty;
+  }
+
+  &--21-9 {
+    @include next-image-container-21-9;
+  }
+
+  &--16-9 {
+    @include next-image-container-16-9;
+  }
+
+  &--1-2 {
+    @include next-image-container-1-2;
+  }
+
+  &--3-1 {
+    @include next-image-container-3-1;
+  }
+
+  &--2-1 {
+    @include next-image-container-2-1;
+  }
+
+  &--square {
+    @include next-image-container-square;
+  }
+
+  &--circle {
+    @include next-image-container-circle;
+  }
+
+  &--contain {
+    .next-image {
+      @include next-image-contain;
+    }
+  }
+
+  &__container {
+    @include next-image-container;
+  }
+}

@@ -99,7 +99,7 @@ export const Default = (props: NavigationProps): JSX.Element => {
         <div className="menu-humburger" />
         <div className="component-content">
           <nav>
-            <ul className="clearfix">{list}</ul>
+            <ul>{list}</ul>
           </nav>
         </div>
       </label>
@@ -140,7 +140,7 @@ const NavigationList = (props: NavigationProps) => {
           {getNavigationText(props)}
         </Link>
       </div>
-      {children.length > 0 ? <ul className="clearfix">{children}</ul> : null}
+      {children.length > 0 ? <ul>{children}</ul> : null}
     </li>
   );
 };

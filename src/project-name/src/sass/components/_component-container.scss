@@ -1,6 +1,7 @@
 @import '../abstract/mixins';
 
 $size-padding: 8px;
+
 .container-wrapper {
   width: 100%;
 }
@@ -20,9 +21,4 @@ $size-padding: 8px;
   &.fullwidth-container {
     max-width: unset;
   }
-
-  .component-content {
-    @include clearfix();
-  }
-
 }

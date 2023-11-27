@@ -3,6 +3,7 @@
 
 .sxa-bordered {
     box-sizing: border-box;
+
     >.component-content {
         padding: 0;
         @include border-basic();
@@ -13,8 +14,10 @@
 .column-splitter,
 .row-splitter {
     box-sizing: border-box;
+
     .sxa-bordered {
         padding: $default-padding !important;
+
         >.component,
         .scEmptyPlaceholder {
             @include border-basic();

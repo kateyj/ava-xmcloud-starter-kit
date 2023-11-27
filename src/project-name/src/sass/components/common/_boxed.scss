@@ -10,6 +10,7 @@
     @include respond-to(mobile) {
         padding: 10px;
     }
+
     >div {
         @include wrapper();
     }

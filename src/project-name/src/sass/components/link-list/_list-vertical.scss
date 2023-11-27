@@ -9,9 +9,11 @@
     padding: 3px 5px;
     @include border-basic();
   }
+
   a {
-    border: none;
+    border: 0;
   }
+
   li {
     display: block;
     margin-left: $middle-margin;

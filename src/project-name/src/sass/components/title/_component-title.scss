@@ -3,6 +3,7 @@
 
 .title {
   background: $title-bg;
+
   h1,
   .field-title {
     >a, >span {
@@ -15,6 +16,7 @@
       display: block;
       text-decoration: none;
       cursor: pointer;
+
       &:hover {
         color: $title-color-active;
       }

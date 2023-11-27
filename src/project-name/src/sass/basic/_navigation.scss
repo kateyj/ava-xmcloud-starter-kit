@@ -32,9 +32,6 @@ $hamburger-margin: 18px;
       display: none;
     }
     
-    ul.clearfix {
-      list-style: none;
-    }
     .level0 {
       display: flex;
     }
@@ -84,10 +81,12 @@ $hamburger-margin: 18px;
       .level0, .level1 {
         float: unset;
         margin-left: 0;
+
         >.navigation-title {
           >a {
             font-size: $text-size-30;
             line-height: 90px;
+
             >span {
               color: $text-white;
             }

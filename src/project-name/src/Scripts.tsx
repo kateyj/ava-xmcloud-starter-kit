@@ -1,4 +1,4 @@
-import CdpPageView from 'components/CdpPageView';
+import CdpPageView from 'components/sitecore-oob/CdpPageView';
 
 const Scripts = (): JSX.Element => {
   return (
