@@ -1,37 +1,37 @@
 # What's in this Starter Kit?
 
 Global styling starter
-	- text styles
-	- color variables
-	- breakpoints
-	- grid support for Sitecore XM Cloud
-	- styles for Sitecore XM Cloud Pages Editor
-	- Button styles
-	- Link styles
+- text styles
+- color variables
+- breakpoints
+- grid support for Sitecore XM Cloud
+- styles for Sitecore XM Cloud Pages Editor
+- Button styles
+- Link styles
 
-Basic components: 
-	- Card
-	- Hero (contains an H1 and should only be one per page)
-	- Banner (does NOT contain an H1, and can be used throughout pages)
-	- Video Player
-	- Audio Player
-	- Carousel
-	- Breadcrumbs
+Basic components (to come): 
+- Card
+- Hero (contains an H1 and should only be one per page)
+- Banner (does NOT contain an H1, and can be used throughout pages)
+- Video Player
+- Audio Player
+- Carousel
+- Breadcrumbs
 
 Sitecore Out of the Box components:
-	- CDP Page View
-	- Column Splitter
-	- Container
-	- Content Block
-	- Image
-	- Link List
-	- Navigation
-	- Page Content
-	- Partial Design Dynamic Placeholder
-	- Promo
-	- Rich Text
-	- Row Splitter
-	- Title
+- CDP Page View
+- Column Splitter
+- Container
+- Content Block
+- Image
+- Link List
+- Navigation
+- Page Content
+- Partial Design Dynamic Placeholder
+- Promo
+- Rich Text
+- Row Splitter
+- Title
 
 Page Templates:
 	- App
