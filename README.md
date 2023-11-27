@@ -1,6 +1,6 @@
 # What's in this Starter Kit?
 
-Global styling starter
+Global styling starter (to come):
 - text styles
 - color variables
 - breakpoints
@@ -34,10 +34,10 @@ Sitecore Out of the Box components:
 - Title
 
 Page Templates:
-	- App
-	- Error
-	- 404
-	- 500
+- App
+- Error
+- 404
+- 500
 
 -----
 # Getting Started
