@@ -141,12 +141,10 @@ Unlike some React/NextJS apps, this accelerator is configured to allow for globa
 	- this command creates sitecore config files used for later build and integration, this is not optional
 	- additionally, this command will allow developers without local Sitecore instances to work using the Sitecore environment that is configured in .env (actually .env.local) as the data source for their work, which will allow the team to work with Sitecore pages and components without the overhead of a local Sitecore instance.
 
---------
 ------
 
 **If you do not need to access Sitecore locally, you can skip the below steps about setting up Docker and Sitecore Configuration.**
 
---------
 --------
 # Sitecore Developer Setup
 
