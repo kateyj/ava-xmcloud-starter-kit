@@ -8,10 +8,10 @@ export default create({
   fontBase: '"Open Sans", sans-serif',
   fontCode: 'monospace',
 
-  brandTitle: 'Avanadedotcom',
-  brandUrl: '',
-  brandImage: 'ava_logo.jpg',
-  brandTarget: '_self',
+  // brandTitle: 'Storybook',
+  // brandUrl: '',
+  // brandImage: 'ava_logo.jpg',
+  // brandTarget: '_self',
 
   //
   colorPrimary: '#ff5800',

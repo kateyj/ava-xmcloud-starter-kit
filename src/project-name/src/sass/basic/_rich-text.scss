@@ -1,5 +1,5 @@
-@import "../abstract/vars";
-@import "variables";
+@use "../../sass/abstract/vars";
+@use "variables";
 
 .rich-text {
   font-size: $text-size-16;

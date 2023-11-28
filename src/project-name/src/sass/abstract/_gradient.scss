@@ -1,0 +1,50 @@
+@use './colors';
+@use './z-index';
+
+@mixin horizontal-aurora-background {
+  background: linear-gradient(90deg, colors.$pink 0%, colors.$brand-main 100%);
+}
+
+@mixin horizontal-luminous-background {
+  background: linear-gradient(90deg, colors.$brand-main 0%, colors.$gold 100%);
+}
+
+@mixin titleGradient {
+  @include horizontal-aurora-background;
+  @include prevent-cut-letters-in-gradiented-h1-and-h2;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  .editing-mode & {
+    color: colors.$gray-80;
+  }
+}
+
+@mixin prevent-cut-letters-in-gradiented-h1-and-h2 {
+  @at-root h1#{&},
+    .h1#{&},
+    h2#{&},
+    .h2#{&} {
+    &::after {
+      content: ' ';
+      display: block;
+      height: 7px;
+    }
+  }
+}
+
+@mixin border-gradient {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -3px;
+    border-radius: inherit;
+    z-index: z-index.$z-index-minus-10;
+    @include horizontal-aurora-background;
+  }
+}

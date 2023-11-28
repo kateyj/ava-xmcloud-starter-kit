@@ -1,6 +1,6 @@
-@import "../abstract/vars/colors";
-@import "../abstract/mixins";
-@import "variables";
+@use "../abstract/vars/colors";
+@use "../abstract/mixins";
+@use "variables";
 
 .prod-mode {
   #header {

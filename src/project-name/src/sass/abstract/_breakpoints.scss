@@ -1,0 +1,65 @@
+/* Example how to use:
+@include screen(only-small-phone) {}
+@include screen(phone-and-up) {}
+@include screen(only-phone) {}
+@include screen(tablet-and-up) {}
+@include screen(only-tablet) {}
+@include screen(desktop-and-up) {}
+@include screen(only-desktop) {}
+@include screen(only-large-desktop) {}
+*/
+
+$breakpoints: (
+  'xxs': 375px,
+  'xs': 376px,
+  'sm': 767px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1025px,
+  'xxl': 1728px,
+  'xxxl': 1729px,
+);
+
+@mixin screen($size) {
+  @if $size == only-small-phone {
+    @media screen and (max-width: map-get($breakpoints, 'xxs')) {
+      @content;
+    }
+  } @else if $size == phone-and-up {
+    @media screen and (min-width: map-get($breakpoints, 'xs')) {
+      @content;
+    }
+  } @else if $size == only-phone {
+    @media screen and (max-width: map-get($breakpoints, 'sm')) {
+      @content;
+    }
+  } @else if $size == tablet-and-up {
+    @media screen and (min-width: map-get($breakpoints, 'md')) {
+      @content;
+    }
+  } @else if $size == tablet-and-down {
+    @media screen and (max-width: map-get($breakpoints, 'lg')) {
+      @content;
+    }
+  } @else if $size == only-tablet {
+    @media screen and (min-width: map-get($breakpoints, 'md')) and (max-width: map-get($breakpoints, 'lg')) {
+      @content;
+    }
+  } @else if $size == desktop-and-up {
+    @media screen and (min-width: map-get($breakpoints, 'xl')) {
+      @content;
+    }
+  } @else if $size == only-desktop {
+    @media screen and (min-width: map-get($breakpoints, 'xl')) and (max-width: map-get($breakpoints, 'xxl')) {
+      @content;
+    }
+  } @else if $size == only-large-desktop {
+    @media screen and (min-width: map-get($breakpoints, 'xxxl')) {
+      @content;
+    }
+  } @else {
+    @media #{$size} {
+      @content;
+    }
+  }
+}

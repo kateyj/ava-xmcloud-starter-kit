@@ -1,5 +1,5 @@
-@use '../../../../sass/abstract/colors';
-@use '../../../../sass/abstract/variables';
+@use '../../../../sass/abstract/vars/colors';
+@use '../../../../sass/abstract/vars';
 
 .vertical-card {
   padding: 0;
@@ -14,11 +14,11 @@
   }
 
   .link__button-tertiary {
-    margin-top: variables.$xs-gutter;
+    margin-top: vars.$xs-gutter;
   }
 
   &__content__text__title {
-    margin-top: variables.$xs-gutter;
+    margin-top: vars.$xs-gutter;
   }
 
   &__content__text__body {

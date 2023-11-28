@@ -1,0 +1,11 @@
+@mixin blur-back($size) {
+  backdrop-filter: blur($size);
+}
+
+@mixin blur-back-10 {
+  @include blur-back(10px);
+}
+
+@mixin blur-back-20 {
+  @include blur-back(20px);
+}

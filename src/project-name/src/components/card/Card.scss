@@ -1,16 +1,19 @@
-@use '../../sass/abstract/colors';
-@use '../../sass/abstract/border-radius';
+@use "../../sass/abstract/vars/colors";
+@use '../../sass/abstract/vars/border-radius';
 
 .card {
   min-width: 264px;
   min-height: 464px;
   height: 100%;
-  background-color: colors.$gray-light;
+  background-color: colors.$bg-light-gray;
   padding: 24px;
   border-radius: border-radius.$border-radius-30;
   flex: 1 0 264px;
 
   &--white {
-    background-color: colors.$white;
+    background-color: colors.$bg-basic-color;
   }
+
+  @import "./variants";
+
 }

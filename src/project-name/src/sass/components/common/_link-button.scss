@@ -1,7 +1,7 @@
-@import "../../abstract/mixins";
+@use "../../abstract/mixins";
 
 .link-button {
-    @import "../../base/links/";
+    @use "../../base/links/";
 }
 
 .link.link-button {

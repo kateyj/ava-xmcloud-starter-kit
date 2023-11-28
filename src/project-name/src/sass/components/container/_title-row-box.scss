@@ -1,5 +1,5 @@
-@import "../../abstract/vars";
-@import "../../abstract/mixins";
+@use "../../abstract/vars";
+@use "../../abstract/mixins";
 
 .title-row-box {
     @include border-basic();

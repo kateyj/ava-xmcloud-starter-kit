@@ -9,3 +9,20 @@ $large-margin: 30px;
 $extralarge-margin: 40px;
 
 $small-padding: 10px;
+
+// Grid
+$xs-gutter: 16px;
+$sm-gutter: 24px;
+$gutter: 40px;
+$vertical-gutter: $gutter;
+$horizontal-gutter: $sm-gutter;
+
+// Box
+$XXL-width: 1728px;
+$L-width: 1128px;
+
+$max-container-width: $L-width + $horizontal-gutter + $horizontal-gutter;
+
+// Components
+$header-height: 80px;
+$sm-header-height: 64px;

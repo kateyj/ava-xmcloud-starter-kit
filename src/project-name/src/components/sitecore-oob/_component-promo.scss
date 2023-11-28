@@ -1,5 +1,5 @@
-@import "../abstract/vars";
-@import "../abstract/mixins";
+@use "../../sass/abstract/vars";
+@use "../../sass/abstract/mixins";
 
 .promo {
     background: $promo-bg;
@@ -42,6 +42,4 @@
             margin-bottom: 10px;
         }
     }
-    @import "../variants/promo";
-    @import "../base/richtext/richtext";
 }

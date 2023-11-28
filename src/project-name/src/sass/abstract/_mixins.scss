@@ -1,4 +1,10 @@
-@import "vars";
+
+@use './colors';
+@use './z-index';
+@use './breakpoints';
+@use './blur';
+
+@use "vars";
 
 /* breakpoints */
 
@@ -109,5 +115,73 @@ $break-mobile-large: 992px;
   &:hover {
       color: $text-basic;
       background: $bg-light-gray;
+  }
+}
+
+
+@mixin setFontStyles($font-size, $line-height, $font-weight, $text-decoration) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  text-decoration: $text-decoration;
+}
+
+@mixin bold-on-hover {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &::after {
+    content: attr(data-text);
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: 700;
+  }
+}
+
+@mixin invisible-scroll {
+  &::-webkit-scrollbar {
+    visibility: hidden;
+  }
+}
+
+@mixin scrollable-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 12px;
+
+  @include breakpoints.screen(tablet-and-down) {
+    @include invisible-scroll;
+    padding-bottom: 0;
+  }
+}
+
+@mixin modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  min-width: 100vw;
+  background: rgba(colors.$white, 0.9);
+  z-index: z-index.$z-index-90;
+  @include blur.blur-back-10;
+}
+
+@mixin change-uppercase-to-capitalize {
+  text-transform: lowercase;
+
+  &::first-letter,
+  &::first-line {
+    text-transform: capitalize;
   }
 }

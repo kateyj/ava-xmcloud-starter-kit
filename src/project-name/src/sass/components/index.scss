@@ -1,16 +1,22 @@
-@import "component-column-splitter";
-@import "component-container";
-@import "component-image";
-@import "component-navigation";
-@import "component-promo";
-@import "component-richtext-content";
+@use "common";
+@use "container";
+@use "layout";
+@use "promo";
+@use "spacing";
+@use "title";
+@use "image";
+@use "link-list";
+@use "rich-text";
 
-@import "common";
-@import "container";
-@import "layout";
-@import "promo";
-@import "spacing";
-@import "title";
-@import "image";
-@import "link-list";
-@import "rich-text";
+@use "../../components/sitecore-oob/component-column-splitter";
+@use "../../components/sitecore-oob/component-container";
+@use "../../components/sitecore-oob/component-image";
+@use "../../components/sitecore-oob/component-navigation";
+@use "../../components/sitecore-oob/component-promo";
+@use "../../components/sitecore-oob/component-richtext-content";
+
+@use "../../components/card/Card.scss";
+
+@use "../../components/link/Link.scss";
+
+@use "../../components/shared/nextImg/NextImageWithNullFallback.scss";

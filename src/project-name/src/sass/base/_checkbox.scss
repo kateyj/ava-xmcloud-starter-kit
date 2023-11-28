@@ -1,0 +1,7 @@
+@use '../abstract/colors';
+
+input[type='checkbox'] {
+  accent-color: colors.$gray-80;
+  width: 18px;
+  height: 18px;
+}

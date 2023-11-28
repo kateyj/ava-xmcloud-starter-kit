@@ -1,5 +1,5 @@
-@import '../../abstract/vars';
-@import '../../abstract/mixins';
+@use '../../abstract/vars';
+@use '../../abstract/mixins';
 
 .title {
   background: $title-bg;
@@ -20,7 +20,6 @@
       &:hover {
         color: $title-color-active;
       }
+    }
   }
-}
-  @import '../../variants/title';
 }

@@ -1,5 +1,5 @@
-@use '../../../../sass/abstract/colors';
-@use '../../../../sass/abstract/variables';
+@use '../../../../sass/abstract/vars/colors';
+@use '../../../../sass/abstract/vars';
 
 .horizontal-card {
   padding: 0;
@@ -35,7 +35,7 @@
   }
 
   &__link {
-    margin-top: variables.$xs-gutter;
+    margin-top: vars.$xs-gutter;
   }
 
   &__title {

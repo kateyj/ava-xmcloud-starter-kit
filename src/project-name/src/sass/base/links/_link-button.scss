@@ -1,5 +1,5 @@
-@import "../../abstract/vars/colors";
-@import "../../abstract/mixins";
+@use "../../abstract/vars/colors";
+@use "../../abstract/mixins" as *;
 
 .button-default, .default {
     @include default-link-button();

@@ -1,5 +1,5 @@
-@import "../abstract/vars";
-@import "variables";
+@use "../../sass/abstract/vars";
+@use "variables";
 
 $hamburger-width: 28px;
 $hamburger-height: 18px;
