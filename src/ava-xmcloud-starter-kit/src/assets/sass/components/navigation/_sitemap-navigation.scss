@@ -1,0 +1,17 @@
+@import '../../abstracts/vars';
+@import '../../abstracts/mixins';
+
+.navigation.sitemap-navigation {
+  .level2 a {
+    position: relative;
+    padding-left: 10px;
+
+    &::before {
+      @include font-size(1.4);
+      transform: translateY(-50%) scale(1, -1);
+      position: absolute;
+      top: 50%;
+      left: -8px;
+    }
+  }
+}
