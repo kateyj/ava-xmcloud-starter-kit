@@ -1,23 +1,5 @@
 # What's in this Starter Kit?
 
-Global styling starter (to come):
-- text styles
-- color variables
-- breakpoints
-- grid support for Sitecore XM Cloud
-- styles for Sitecore XM Cloud Pages Editor
-- Button styles
-- Link styles
-
-Basic components (to come): 
-- Card
-- Hero (contains an H1 and should only be one per page)
-- Banner (does NOT contain an H1, and can be used throughout pages)
-- Video Player
-- Audio Player
-- Carousel
-- Breadcrumbs
-
 Sitecore Out of the Box components:
 - CDP Page View
 - Column Splitter
@@ -39,23 +21,25 @@ Page Templates:
 - 404
 - 500
 
+Support for Storybook and Chromatic for Front End teams. 
+
 -----
 # Getting Started
 
 ## Configure Project
 
-  Before you begin, make the following updates to the codebase to customize for your project:
-	- Update /src/project-name (folder) to your project name
-	- Update package.json
-	- Open /project-name/package.json
-	    - Update the following:
-            - 'name:' field to the name of your project
-            - 'description:' field to describe your project
-            - 'config/appname:' field to the name of your project
-            - 'author/name' and 'author/url' to those relevant to your project
-            - 'repository/type' and 'repository/url' to match your project
+Before you begin, make the following updates to the codebase to customize for your project:
+- Update /src/project-name (folder) to your project name
+- Update package.json
+- Open /project-name/package.json
+    - Update the following:
+        - 'name:' field to the name of your project
+        - 'description:' field to describe your project
+        - 'config/appname:' field to the name of your project
+        - 'author/name' and 'author/url' to those relevant to your project
+        - 'repository/type' and 'repository/url' to match your project
 
- Review the remaining dependencies to ensure that they are what you need for your project.
+Review the remaining dependencies to ensure that they are what you need for your project.
 
 The following are Sitecore specific dependencies, so leave these in place in both dependencies and devDependencies:
 - Sitecore-jss
@@ -69,7 +53,7 @@ The following are Sitecore specific dependencies, so leave these in place in bot
 ## Set up Chromatic Account
 
 Once a Chromatic account for the project is created, add the Chromatic Project ID to the `package.json` on line 133.
-	Note: The owner of the Chromatic account will need to add all teammates on the project to Chromatic over the course of the work, so it would be beneficial to ensure that there's more than one admin on the Chromatic project. 
+Note: The owner of the Chromatic account will need to add many of the teammates on the project to Chromatic over the course of the work, so it would be beneficial to ensure that there's more than one admin on the Chromatic project. 
 
 
 ----
@@ -78,6 +62,13 @@ Once a Chromatic account for the project is created, add the Chromatic Project I
 The project is set up to allow Front End developers to view their components within Storybook for local development outside of integration into Sitecore.
 
 Of note, the code that the Front End team creates will be the SAME code that gets used by Sitecore. If the Sitecore team needs updates to the code, they will need to collaborate with the Front End team to ensure that any updates made do not break the Storybook preview.
+
+Setup the project locally by first cloning the repository, and then running the following command in the ./src/ava-xmcloud-starter-kit folder in your terminal application
+
+```
+npm i
+```
+
 
 Start Storybook locally by running 
 
@@ -415,6 +406,24 @@ TODO: Add the rest of the notes about how the accelerator was created from the S
 
 - Explain Figma integration with Storybook (and list figma alternatives so that we can decouple as much as possible.)
 - Integrating Figma, Storybook, and Chromatic
+
+Add Global styling starter (to come):
+- text styles
+- color variables
+- breakpoints
+- grid support for Sitecore XM Cloud
+- styles for Sitecore XM Cloud Pages Editor
+- Button styles
+- Link styles
+
+Add Basic components (to come): 
+- Card
+- Hero (contains an H1 and should only be one per page)
+- Banner (does NOT contain an H1, and can be used throughout pages)
+- Video Player
+- Audio Player
+- Carousel
+- Breadcrumbs
 
 ----
 ## This is a work in progress.
