@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-cd src/avanadedotcom
-npm run pre-push
